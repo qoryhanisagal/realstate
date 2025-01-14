@@ -168,7 +168,7 @@ body {
     flex: 1; /* I ensured all items take up equal space */
     text-align: center; /* I centered the text within each item */
     margin: 0 10px; /* I added spacing between the items */
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .search-button {
