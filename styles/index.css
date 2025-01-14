@@ -1,0 +1,159 @@
+/*=================================*/
+/*General body styling */
+/*=================================*/
+body {
+    font-family: Arial, sans-serif; /* Set default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+/*=================================*/
+/*Header Section Styling */
+/*=================================*/
+.header {
+    background-color: black; /* Black background for header */
+    color: white; /* White text */
+    padding: 20px 40px; /* Space around content */
+}
+
+/*=================================*/
+/*Navigation Bar Layout*/
+/*=================================*/
+.navbar {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+}
+
+/*=================================*/
+/*Logo Styling*/
+/*=================================*/
+.logo {
+    font-size: 1.5rem; /* Slightly larger font */
+    font-weight: bold; /* Bold font */
+    color: white; /* White text */
+}
+
+/*=================================*/
+/* Navigation link styling */
+/*=================================*/
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Arrange links horizontally */
+    gap: 20px; /* Space between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/*=================================*/
+/*Individual Navigation Link Styling */
+/*=================================*/
+.nav-links li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    font-size: 1rem; /* Standard font size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/*=================================*/
+/*Navigation Link Hover Effect*/
+/*=================================*/
+.nav-links li a:hover {
+    color: #f4f4f4; /* Slightly lighter color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/*=================================*/
+/*Hero Section Container Styling */
+/*=================================*/
+.hero-container {
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding: 40px 20px; /* Add padding */
+    position: relative;
+    z-index: 1;
+}
+
+/*=================================*/
+/*Hero Inner Container Styling */
+/*=================================*/
+.hero-inner {
+    background-color: white; /* White background */
+    background-image: url('../img/hero-bg.svg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the container */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure elements stay inside rounded corners */
+    max-width: 1900px; /* Limit width */
+    width: 90%; /* Responsive width */
+    padding: 40px; /* Padding inside the container */
+    text-align: center; /* Center-align text */
+    z-index: 1; /* Keep text above background */
+}
+
+/*=================================*/
+/*Hero Content Styling */
+/*=================================*/
+.hero-content h1 {
+    position: relative; /* For layering text above the background */
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white; /* White text for contrast */
+    padding: 100px 20px; /* Add spacing for the content */
+    border-radius: 20px; /* Match the parent's rounded corners */
+}
+
+.hero-content p {
+    font-size: 2rem; /* Adjust paragraph size */
+    line-height: 1.6; /* Improve readability */
+    color: white;
+    margin: 0; /* Remove default margin */
+}
+
+/*=================================*/
+/*Search Box Styling */
+/*=================================*/
+.search-box {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+    background-color: white; /* White background */
+    border: 1px solid #ddd; /* Light border for separation */
+    padding: 20px; /* Internal padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Limit max width */
+    position: relative; /* Allow precise placement */
+    bottom: -50px; /* Adjust position to overlap hero section */
+    left: 20%; /* Center horizontally */
+    transform: translateX(-50%); /* Correct centering offset */
+    z-index: 10; /* Ensure it appears above the hero section */
+}
+
+.search-item {
+    flex: 1; /* Equal width for all items */
+    text-align: center; /* Center text */
+    margin: 0 10px; /* Space between items */
+}
+
+.search-button {
+    background-color: #FFD700; /* Gold button background */
+    color: black; /* Black text */
+    font-size: 1rem; /* Button font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.search-button:hover {
+    background-color: #FFC107; /* Darker gold on hover */
+}
