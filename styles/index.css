@@ -2,114 +2,124 @@
 /*General body styling */
 /*=================================*/
 body {
-    font-family: Arial, sans-serif; /* I set the default font to Arial for readability */
-    margin: 0; /* I removed any default margin */
-    padding: 0; /* I removed any default padding */
-    background-color: #f4f4f4; /* I added a light gray background for a clean look */
-    color: #333; /* I chose a dark gray text color for contrast */
+    font-family: Arial, sans-serif; /* I chose Arial as the default font for its readability and clean look */
+    margin: 0; /* I removed any default margin to ensure consistent spacing */
+    padding: 0; /* I removed any default padding for a uniform layout */
+    background-color: #f4f4f4; /* I added a light gray background to create a neutral and clean canvas */
+    color: #333; /* I selected a dark gray text color to ensure good contrast with the background */
 }
 
 /*=================================*/
 /*Header Section Styling */
 /*=================================*/
 .header {
-    background-color: black; /* I made the header background black for a sleek design */
-    color: white; /* I set the text color to white for contrast */
-    padding: 20px 40px; /* I added spacing around the content for better alignment */
+    background-color: black; /* I made the header black to give it a bold and professional appearance */
+    color: white; /* I set the text to white for maximum contrast and readability */
+    padding: 20px 40px; /* I added padding to create balance and breathing room for the content */
+    border-bottom: 7px solid #FFD700; /* I added a gold accent at the bottom to make the design more elegant */
 }
 
 /*=================================*/
 /*Navigation Bar Layout*/
 /*=================================*/
 .navbar {
-    display: flex; /* I used flexbox to align the logo and links */
-    justify-content: space-between; /* I spaced out the logo and links evenly */
-    align-items: center; /* I centered the items vertically */
+    display: flex; /* I used flexbox for alignment and to create a responsive layout */
+    justify-content: space-between; /* I ensured there is even spacing between the logo and the navigation links */
+    align-items: center; /* I centered everything vertically within the header */
 }
 
 /*=================================*/
 /*Logo Styling*/
 /*=================================*/
 .logo {
-    font-size: 1.5rem; /* I increased the font size for visibility */
-    font-weight: bold; /* I made the logo text bold to stand out */
-    color: white; /* I set the logo color to white for consistency */
+    display: flex; /* I used flexbox to align the image and text horizontally */
+    align-items: center; /* I centered the image and text vertically */
+    font-size: 2rem; /* I made the logo text larger to draw attention */
+    font-weight: bold; /* I added bold styling to make the text more prominent */
+    color: white; /* I used white to match the header's color scheme */
+}
+
+.logo-image {
+    width: 40px; /* I set a reasonable size for the logo */
+    height: 40px; /* I matched the height to maintain proportions */
+    margin-right: 10px; /* I added space between the logo and text */
+    border-bottom: 7px solid #FFD700; /* I added a gold border to emphasize the logo */
 }
 
 /*=================================*/
 /* Navigation link styling */
 /*=================================*/
 .nav-links {
-    list-style-type: none; /* I removed the default bullet points */
-    display: flex; /* I arranged the links horizontally */
-    gap: 20px; /* I added spacing between the links */
-    margin: 0; /* I reset the default margin */
-    padding: 0; /* I reset the default padding */
+    list-style-type: none; /* I removed the default bullet points for a cleaner navigation bar */
+    display: flex; /* I used flexbox to arrange the links horizontally */
+    gap: 20px; /* I added spacing between the links for better readability */
+    margin: 0; /* I reset the margin for consistent alignment */
+    padding: 0; /* I ensured no padding interfered with the layout */
 }
 
 /*=================================*/
 /*Individual Navigation Link Styling */
 /*=================================*/
 .nav-links li a {
-    text-decoration: none; /* I removed the underline from the links */
-    color: white; /* I kept the link text white for uniformity */
-    font-size: 1.5rem; /* I set a standard font size for the links */
-    transition: color 0.3s; /* I added a smooth color transition for hover effects */
+    text-decoration: none; /* I removed the underline to keep the design simple and modern */
+    color: white; /* I made the links white to stand out against the black header */
+    font-size: 1.5rem; /* I increased the font size to make the links easy to read */
+    transition: color 0.3s; /* I added a smooth transition effect to enhance the hover interaction */
 }
 
 /*=================================*/
 /*Navigation Link Hover Effect*/
 /*=================================*/
 .nav-links li a:hover {
-    color: #f4f4f4; /* I lightened the text color slightly on hover */
-    text-decoration: underline; /* I added an underline on hover for emphasis */
+    color: #FFD700; /* I changed the hover color to gold for a vibrant effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* I added a smooth transition for both the color and growth effects */
 }
 
 /*=================================*/
 /*Hero Section Container Styling */
 /*=================================*/
 .hero-container {
-    margin: 0; /* I ensured there’s no margin around the hero section */
-    padding-top: 0; /* I removed extra top padding */
-    background-color: white; /* I set the hero section’s background to white */
-    display: flex; /* I used flexbox to center the content */
+    margin: 0; /* I removed all margins for seamless alignment */
+    padding-top: 0; /* I eliminated extra top padding */
+    background-color: white; /* I chose a white background to highlight the content */
+    display: flex; /* I used flexbox to center the content both horizontally and vertically */
     justify-content: center; /* I aligned the content horizontally in the center */
-    align-items: center; /* I aligned the content vertically in the center */
-    flex-direction: column; /* I stacked the content vertically */
-    padding: 40px 20px; /* I added padding around the content */
-    position: relative; /* I set the position for the overlay to work */
-    z-index: 1; /* I placed this section above other elements */
+    align-items: center; /* I ensured the content was centered vertically */
+    flex-direction: column; /* I stacked the elements in a vertical layout */
+    padding: 40px 20px; /* I added padding for proper spacing around the content */
+    position: relative; /* I set this position to allow for overlay placement */
+    z-index: 1; /* I brought this section to the front for visibility */
 }
 
 /*=================================*/
 /*Hero Inner Container Styling */
 /*=================================*/
 .hero-inner {
-    position: relative; /* I allowed positioning for the overlay */
+    position: relative; /* I allowed precise positioning of the overlay */
     top: 0px;
-    height: 727px; /* I set a fixed height for consistency */
-    background-image: url('../img/hero-bg.svg'); /* I added a background image */
-    background-size: cover; /* I ensured the image covers the container */
-    background-position: center; /* I centered the background image */
-    border-radius: 25px; /* I rounded the corners for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* I added a subtle shadow for depth */
-    overflow: hidden; /* I made sure elements stay inside the rounded corners */
-    max-width: 2000px; /* I limited the width for large screens */
-    width: 90%; /* I made the width responsive */
-    padding: 40px; /* I added padding inside the container */
+    height: 727px; /* I set a fixed height for a consistent layout */
+    background-image: url('../img/hero-bg.svg'); /* I added a background image to make the hero visually appealing */
+    background-size: cover; /* I ensured the image covers the entire container */
+    background-position: center; /* I centered the background image for a balanced look */
+    border-radius: 25px; /* I rounded the corners to soften the design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* I added a shadow for depth */
+    overflow: hidden; /* I made sure no content overflows beyond the rounded corners */
+    max-width: 2000px; /* I capped the width for large screens */
+    width: 90%; /* I made the width responsive for all devices */
+    padding: 40px; /* I added padding to create space inside the container */
     text-align: center; /* I centered the text content */
-    z-index: 1; /* I kept the text above the background */
+    z-index: 1; /* I layered this content above the background */
 }
 
 /* Overlay */
 .hero-inner::before {
-    content: ''; /* I used an empty pseudo-element for the overlay */
-    position: absolute; /* I positioned the overlay above the container */
+    content: ''; /* I created an empty pseudo-element for the overlay */
+    position: absolute; /* I positioned the overlay to cover the entire container */
     top: 0;
     left: 0;
-    width: 100%; /* I stretched the overlay to cover the container */
-    height: 100%; /* I matched the overlay’s height with the container */
-    background: rgba(0, 0, 0, 0.4); /* I added a black overlay with 40% opacity */
+    width: 100%; /* I made the overlay span the full width */
+    height: 100%; /* I matched the height of the overlay to the container */
+    background: rgba(0, 0, 0, 0.4); /* I added a semi-transparent black overlay to enhance text visibility */
     z-index: 2; /* I placed the overlay above the background image */
     border-radius: 25px; /* I matched the container’s rounded corners */
 }
@@ -117,159 +127,325 @@ body {
 /* Ensure Content Above Overlay */
 .hero-inner h1,
 .hero-inner p {
-    position: relative; /* I made the content visible above the overlay */
-    z-index: 3; /* I placed the content above the overlay */
+    position: relative; /* I used relative positioning to layer content above the overlay */
+    z-index: 3; /* I ensured the text is visible above the overlay */
 }
 
 /*=================================*/
 /*Hero Content Styling */
 /*=================================*/
 .hero-content h1 {
-    position: relative; /* I used relative positioning for layering */
-    font-size: 4.5em; /* I set a large font size for the heading */
-    margin-top: 170px; /* I adjusted the spacing above the heading */
-    color: white; /* I made the heading white for contrast */
-    padding: 170px 40px; /* I added spacing for better readability */
-    border-radius: 20px; /* I rounded the corners to match the container */
+    position: relative; /* I made sure the heading stays above the overlay */
+    font-size: 4.5em; /* I set a large font size for a striking visual effect */
+    margin-top: 170px; /* I adjusted the top margin to create space above the heading */
+    color: white; /* I made the heading white for clarity and contrast */
+    padding: 170px 40px; /* I added padding for a balanced layout */
+    border-radius: 20px; /* I rounded the corners for cohesion with the container */
 }
 
 .hero-content p {
-    font-size: 2.3rem; /* I adjusted the paragraph font size */
-    line-height: 1.2; /* I improved readability with proper line height */
-    color: white; /* I kept the paragraph text white for contrast */
+    font-size: 2.3rem; /* I scaled up the paragraph text for readability */
+    line-height: 1.2; /* I adjusted the line height for proper spacing between lines */
+    color: white; /* I chose white to maintain contrast with the background */
     margin-top: -185px; /* I aligned the paragraph with the heading */
-    margin-left: 60px; /* I added space to the left for better positioning */
+    margin-left: 60px; /* I adjusted the left margin for better positioning */
 }
-
-
 
 /*=================================*/
 /*Search Box Styling */
 /*=================================*/
 .search-box {
-    display: flex; /* I used flexbox to create a flexible layout for the search box */
-    justify-content: space-between; /* I spaced out the items evenly */
-    align-items: center; /* I aligned the items vertically for a cleaner look */
-    background-color: white; /* I chose a white background to keep it minimal and professional */
-    border: 1px solid #ddd; /* I added a subtle border to define the box */
-    padding: 20px; /* I added internal padding for better spacing */
-    border-radius: 10px; /* I rounded the corners to give it a modern design */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* I added a subtle shadow to create depth */
-    width: 90%; /* I made the width responsive for different screen sizes */
-    max-width: 1000px; /* I limited the maximum width for consistency */
-    position: relative; /* I positioned it to overlap the hero section */
-    bottom: 60px; /* I adjusted its placement slightly above the hero section */
-    left: 22%; /* I aligned it horizontally */
-    transform: translateX(-50%); /* I centered it using a transform */
-    z-index: 10; /* I placed it above the hero section */
+    display: flex; /* I decided to use flexbox here to create a flexible and adaptive layout for the search box */
+    justify-content: space-between; /* I spaced out the items evenly to ensure they’re neatly arranged */
+    align-items: center; /* I aligned everything vertically for a balanced and clean look */
+    background-color: white; /* I chose a white background to keep the design minimal and professional */
+    border: 1px solid #ddd; /* I added a subtle border to define and separate the box */
+    padding: 20px; /* I added internal padding to make the content visually comfortable */
+    border-radius: 10px; /* I gave the corners a rounded effect to make the design feel modern */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* I included a subtle shadow to add depth to the element */
+    width: 90%; /* I kept the width responsive to adjust across different screen sizes */
+    max-width: 1000px; /* I limited the maximum width for consistency on larger screens */
+    position: relative; /* I positioned the box to overlap slightly above the hero section */
+    bottom: 60px; /* I adjusted its placement to bring it closer to the hero content */
+    left: 22%; /* I aligned the box horizontally for symmetry */
+    transform: translateX(-50%); /* I used a transform to perfectly center the element */
+    z-index: 10; /* I ensured the search box appears above other overlapping elements */
 }
 
 .search-item {
-    flex: 1; /* I ensured all items take up equal space */
-    text-align: center; /* I centered the text within each item */
-    margin: 0 10px; /* I added spacing between the items */
-    font-size: 1.5em;
+    flex: 1; /* I made sure all items take equal space for a balanced layout */
+    text-align: center; /* I centered the text inside each item for uniformity */
+    margin: 0 10px; /* I added spacing between items to prevent them from being too close together */
+    font-size: 1.5em; /* I adjusted the font size to make the text clear and easy to read */
 }
 
 .search-button {
-    background-color: #FFD700; /* I used a gold color for the button to make it stand out */
-    color: black; /* I kept the text black for readability */
-    font-size: 1rem; /* I set the button font size to make it prominent */
-    font-weight: bold; /* I made the button text bold for emphasis */
+    background-color: #FFD700; /* I chose a gold color for the button to make it stand out and grab attention */
+    color: black; /* I kept the text black for high contrast and readability */
+    font-size: 1rem; /* I set the font size to ensure the text is clear */
+    font-weight: bold; /* I made the text bold to emphasize the button’s importance */
     padding: 10px 20px; /* I added padding to make the button easier to click */
-    border: none; /* I removed the border for a clean look */
-    border-radius: 5px; /* I added rounded corners for a polished design */
-    cursor: pointer; /* I set the cursor to pointer to indicate interactivity */
-    transition: background-color 0.3s ease; /* I added a smooth transition for hover effects */
+    border: none; /* I removed the border for a cleaner look */
+    border-radius: 5px; /* I rounded the corners to give the button a polished design */
+    cursor: pointer; /* I set the cursor to pointer to signal that the button is interactive */
+    transition: background-color 0.3s ease; /* I added a smooth transition effect for the hover state */
 }
 
 .search-button:hover {
-    background-color: #FFC107; /* I used a darker gold color on hover for better feedback */
+    background-color: #FFC107; /* I darkened the gold color on hover to provide feedback and interactivity */
 }
 
 /*=================================*/
 /*More About Us Section Styling */
 /*=================================*/
 .about-us {
-    display: flex; /* I used flexbox to arrange the cards horizontally */
-    justify-content: space-around; /* I spaced out the cards evenly */
-    align-items: flex-start; /* I aligned the cards at the top for consistency */
-    gap: 20px; /* I added spacing between the cards */
-    padding: 80px 20px; /* I added padding around the section for a balanced layout */
-    background-color: #f9f9f9; /* I chose a light gray background for subtle contrast */
-    flex-wrap: wrap; /* I allowed the cards to wrap on smaller screens */
+    display: flex; /* I used flexbox to lay out the cards horizontally for a structured look */
+    justify-content: space-around; /* I spread out the cards evenly to ensure equal spacing */
+    align-items: flex-start; /* I aligned the cards at the top to create consistency */
+    gap: 20px; /* I added spacing between the cards to prevent them from feeling crowded */
+    padding: 80px 20px; /* I added padding around the section to give the content breathing room */
+    background-color: #f9f9f9; /* I used a light gray background for a subtle contrast against the cards */
+    flex-wrap: wrap; /* I allowed the cards to wrap for better responsiveness on smaller screens */
 }
 
 /*=================================*/
 /*Individual Cards Styling */
 /*=================================*/
 .card {
-    background-color: white; /* I kept the card background white for a clean appearance */
-    border-radius: 15px; /* I rounded the corners for a modern design */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* I added a shadow for depth */
-    padding: 20px; /* I added spacing inside the card for readability */
-    width: 30%; /* I set the width for square-like shapes */
-    max-width: 700px; /* I limited the width for consistency */
-    text-align: center; /* I aligned the text in the center */
-    position: relative; /* I used relative positioning for the icon placement */
-    display: flex; /* I used flexbox to arrange the card’s content */
-    flex-direction: column; /* I stacked the card content vertically */
-    justify-content: space-between; /* I evenly spaced out the content */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* I added smooth hover effects */
-    min-height: 500px; /* I ensured the cards have a consistent height */
+    background-color: white; /* I kept the card background white to maintain a clean and professional look */
+    border-radius: 15px; /* I rounded the corners for a softer, modern appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* I added a shadow to create depth and make the cards stand out */
+    padding: 20px; /* I added internal spacing to improve readability and balance */
+    width: 30%; /* I ensured the cards have consistent width for a uniform design */
+    max-width: 700px; /* I limited the width to maintain consistency across the section */
+    text-align: center; /* I centered the text to create a cohesive layout */
+    position: relative; /* I used relative positioning to enable better placement of icons */
+    display: flex; /* I applied flexbox to organize the content inside the card */
+    flex-direction: column; /* I stacked the content vertically for better flow */
+    justify-content: space-between; /* I spaced out the content evenly to make the layout more structured */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* I added smooth hover effects for better interactivity */
+    min-height: 500px; /* I ensured all cards have a consistent height */
+    border-top: 10px solid #FFD700; /* I added a gold accent to tie the design together */
+    border-bottom: 10px solid #FFD700; /* I mirrored the gold accent at the bottom for balance */
 }
 
 /* Card Hover Effect */
 .card:hover {
-    transform: translateY(-5px); /* I lifted the card slightly on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* I enhanced the shadow for a hover effect */
+    transform: translateY(-5px); /* I lifted the card slightly on hover to give a floating effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* I enhanced the shadow to create more depth on hover */
 }
 
 /* Title Styling */
 .card h3 {
-    font-size: 2rem; /* I adjusted the font size to make the title prominent */
-    font-weight: bold; /* I made the title bold for emphasis */
-    margin-top: 40px; /* I added space above the title */
+    font-size: 2rem; /* I set the font size to make the title stand out */
+    font-weight: bold; /* I made the title bold to grab attention */
+    margin-top: 40px; /* I added space above the title for balance */
     margin-bottom: 10px; /* I added space below the title for separation */
 }
 
 /* Text Styling */
 .card p {
-    font-size: 1.5rem; /* I adjusted the font size for better readability */
-    color: #666; /* I used a lighter gray color for subtle contrast */
-    line-height: 2; /* I increased the line height for readability */
-    flex-grow: 1; /* I ensured the text stretches to fill the card */
+    font-size: 1.5rem; /* I adjusted the font size to improve readability */
+    color: #666; /* I used a lighter gray color to keep the text visually subtle */
+    line-height: 2; /* I increased the line height for better readability */
+    flex-grow: 1; /* I made sure the paragraph stretches to fill the available space */
 }
 
 /*=================================*/
 /*Icon Styling */
 /*=================================*/
 .icon-container {
-    position: absolute; /* I positioned the icon above the card */
-    top: -40px; /* I placed the icon slightly outside the card */
-    left: 50%; /* I centered the icon horizontally */
-    transform: translateX(-50%); /* I adjusted for proper centering */
+    position: absolute; /* I positioned the icon above the card to create a unique layout */
+    top: -40px; /* I placed the icon slightly above the card to make it stand out */
+    left: 50%; /* I centered the icon horizontally for symmetry */
+    transform: translateX(-50%); /* I adjusted the position to ensure perfect centering */
 }
 
 .icon-bg {
-    background-color: black; /* I added a black circle as the background */
-    border-radius: 50%; /* I made the background a perfect circle */
-    width: 80px; /* I set the size of the circle */
-    height: 80px; /* I matched the width and height for a circle */
+    background-color: black; /* I used a black circle to create contrast for the icon */
+    border-radius: 50%; /* I made the background a perfect circle for a polished look */
+    width: 80px; /* I set the circle size to balance with the card design */
+    height: 80px; /* I matched the width and height for symmetry */
     display: flex; /* I used flexbox to center the icon inside the circle */
-    justify-content: center; /* I centered the icon horizontally */
-    align-items: center; /* I centered the icon vertically */
+    justify-content: center; /* I aligned the icon horizontally within the circle */
+    align-items: center; /* I aligned the icon vertically within the circle */
 }
 
 .icon {
-    width: 60px; /* I adjusted the icon size to fit within the circle */
-    height: 60px; /* I matched the width and height for proportion */
-    filter: invert(1); /* I inverted the colors to make white icons visible */
+    width: 60px; /* I adjusted the icon size to fit well inside the circle */
+    height: 60px; /* I maintained consistent proportions for the icon */
+    filter: invert(1); /* I inverted the colors to make white icons visible on the black background */
 }
 
 /* Card Text Styling */
 .card-text {
-    font-size: 1rem; /* I adjusted the font size for smaller text */
-    color: #666; /* I chose a lighter color for better hierarchy */
-    line-height: 1.6; /* I improved readability with appropriate spacing */
+    font-size: 1rem; /* I chose a smaller font size to differentiate the text */
+    color: #666; /* I used a lighter gray to create a subtle hierarchy */
+    line-height: 1.6; /* I optimized spacing to make the text easier to read */
+}
+
+/*=================================*/
+/*Houses and Penthouses Styling */
+/*=================================*/
+.houses-section {
+    padding: 40px; /* I added padding around the section to create space and balance */
+    background-color: #f9f9f9; /* I chose a light gray background for a clean and neutral look */
+}
+
+.houses-section h2 {
+    text-align: center; /* I centered the section title for emphasis */
+    font-size: 3.2rem; /* I set a larger font size to make the heading stand out */
+    margin-bottom: 20px; /* I added space below the title for separation */
+}
+
+.houses-container {
+    display: flex; /* I used flexbox to arrange the cards horizontally */
+    gap: 20px; /* I created spacing between the cards for a clean layout */
+    justify-content: space-around; /* I spread out the cards evenly */
+    flex-wrap: wrap; /* I allowed the cards to wrap for smaller screens */
+}
+
+/*=================================*/
+/*Houses and Penthouses Card Styling */
+/*=================================*/
+.house-card {
+    position: relative; /* I set the position to allow for precise placement of elements */
+    background-color: white; /* I kept the card background white for a clean look */
+    border-radius: 10px; /* I added rounded corners for a modern design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* I used a subtle shadow for depth */
+    width: 30%; /* I set the width to ensure uniform card sizes */
+    max-width: 700px; /* I limited the width for consistency */
+    margin: 20px; /* I added space between the cards */
+    overflow: hidden; /* I ensured content doesn’t overflow out of the card */
+    transition: transform 0.3s ease; /* I added a smooth scaling effect on hover */
+    border-bottom: 3px solid #FFD700; /* I added a gold border for an accent */
+    border-top: 1px solid #FFD700; /* I mirrored the accent border at the top */
+}
+
+.house-card:hover {
+    transform: scale(1.05); /* I scaled the card slightly on hover for an interactive effect */
+}
+
+.house-image {
+    width: 100%; /* I ensured the image covers the full width of the card */
+    height: 400px; /* I set a consistent height for the images */
+    object-fit: cover; /* I made sure the image maintains its proportions while covering the area */
+    border-bottom: 2px solid #FFD700; /* I added a gold border to separate the image from the card content */
+}
+
+/*=================================*/
+/*Houses and Penthouses Info Styling */
+/*=================================*/
+.house-info {
+    padding: 20px; /* I added internal spacing for readability */
+}
+
+.house-info h3 {
+    font-size: 2.5rem; /* I made the property title prominent */
+    margin-bottom: 10px; /* I added space below the title */
+    text-align: center; /* I centered the title for better alignment */
+    color: #FFD700; /* I used gold to match the site’s color scheme */
+}
+
+.house-info p {
+    font-size: 1.8rem; /* I adjusted the font size for easy readability */
+    margin-bottom: 15px; /* I added space below the paragraph */
+    color: #666; /* I chose a subtle gray color for contrast */
+    margin-left: 20px; /* I aligned the text to the left slightly */
+    text-align: start; /* I aligned the paragraph to the start for better readability */
+}
+
+/*=================================*/
+/*Houses and Penthouses Price Styling */
+/*=================================*/
+.house-price {
+    font-size: 3rem; /* I made the price bold and large for emphasis */
+    font-weight: bold; /* I added weight to make it stand out */
+    color: black; /* I chose black to make the price clear and readable */
+    margin-top: 70px; /* I added space above the price */
+    text-align: center; /* I centered the price for balance */
+}
+
+/*=================================*/
+/*Houses and Penthouses Details Styling */
+/*=================================*/
+
+.house-details {
+    font-size: 2rem; /* I kept the font size consistent with the overall design */
+    margin-bottom: 15px; /* I added space below the details section */
+    justify-content: center; /* I centered the details bubbles */
+    display: flex; /* I used flexbox to align the bubbles in a row */
+    gap: 10px; /* I added spacing between the bubbles */
+    margin-top: 10px; /* I added spacing above the section */
+    flex-wrap: wrap; /* I allowed wrapping for smaller screens */
+}
+
+.house-details img {
+    width: 60px; /* I adjusted the size of the icons for clarity */
+    height: 60px; /* I ensured consistency in size */
+    margin-right: 5px; /* I added space between the icon and text */
+}
+
+/*=================================*/
+/* House Details Bubble Styling */
+/*=================================*/
+.details-bubble {
+    display: flex; /* I used flexbox to align the icon and text inside the bubble */
+    align-items: center; /* I aligned the items vertically for balance */
+    gap: 5px; /* I added space between the icon and text */
+    background-color: #f0f0f0; /* I gave the bubbles a soft background color */
+    border-radius: 15px; /* I rounded the corners for a bubble effect */
+    padding: 5px 10px; /* I added padding to make the bubbles more prominent */
+    font-size: 0.9rem; /* I set a consistent font size for the bubbles */
+}
+
+.details-bubble img {
+    width: 40px; /* I adjusted the icon size for better alignment */
+    height: 30px; /* I maintained a proportionate size */
+}
+
+/*=================================*/
+/* Button Container Styling */
+/*=================================*/
+.details-button-container {
+    display: flex; /* I used flexbox for alignment */
+    justify-content: flex-end; /* I aligned the button to the right */
+    margin-top: 10px; /* I added spacing above the button */
+}
+
+/*=================================*/
+/* Button Styling */
+/*=================================*/
+.details-button {
+    background-color: #FFD700; /* I chose gold to match the site’s theme */
+    color: black; /* I kept the text black for readability */
+    font-size: 1rem; /* I used a consistent font size */
+    font-weight: bold; /* I emphasized the button text */
+    padding: 10px 20px; /* I added padding for a clickable size */
+    border: none; /* I removed the border for a clean look */
+    border-radius: 5px; /* I rounded the corners for a polished effect */
+    cursor: pointer; /* I set the pointer to indicate interactivity */
+    transition: background-color 0.3s ease; /* I added a smooth hover transition */
+}
+
+.details-button:hover {
+    background-color: #FFC107; /* I darkened the gold color slightly on hover for feedback */
+}
+
+/*=================================*/
+/* Footer Styling */
+/*=================================*/
+footer {
+    background-color: #000; /* I chose black for a bold footer */
+    color: #fff; /* I kept the text white for contrast */
+    text-align: center; /* I centered the text for alignment */
+    padding: 20px 0; /* I added vertical spacing for balance */
+    font-size: 1rem; /* I used a standard font size */
+    font-family: Arial, sans-serif; /* I matched the rest of the site’s font */
+    border-top: 5px solid #FFD700; /* I added a gold border to match the theme */
+}
+
+footer p {
+    margin: 0; /* I removed default margin for consistency */
+    line-height: 1.5; /* I adjusted the line height for readability */
 }
