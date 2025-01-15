@@ -31,8 +31,13 @@ This project is a responsive and interactive website designed to showcase proper
 
 ---
 ## Screenshots
-
+### Homepage
 ![Homepage_Descoteaux Properties](https://github.com/user-attachments/assets/63abdadf-c8da-452f-9f99-9b9f5fb0cf97)
 ![image](https://github.com/user-attachments/assets/5e1e4bb4-218c-48b6-b15d-5120a52530e7)
 
+### House & Penthouses
+![Screenshot 2025-01-15 at 03 21 55](https://github.com/user-attachments/assets/5c62c860-e0f3-4af0-9ddc-63cfed835c63)
+
+
+![Screenshot 2025-01-15 at 03 14 20](https://github.com/user-attachments/assets/5f0fec12-d0ae-4251-818a-16b88516bcb4)
 
