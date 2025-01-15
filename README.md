@@ -28,3 +28,11 @@ This project is a responsive and interactive website designed to showcase proper
 1. Clone the repository:  
    ```bash
    git clone https://github.com/qoryhanisagal/descoteaux-properties.git
+
+---
+## Screenshots
+
+![Homepage_Descoteaux Properties](https://github.com/user-attachments/assets/63abdadf-c8da-452f-9f99-9b9f5fb0cf97)
+![image](https://github.com/user-attachments/assets/5e1e4bb4-218c-48b6-b15d-5120a52530e7)
+
+
