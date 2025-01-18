@@ -75,6 +75,21 @@ body {
     transition: transform 0.3s ease, color 0.3s ease; /* I added a smooth transition for both the color and growth effects */
 }
 
+/* @media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links li a {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+        background-color: red;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+} */
+
 /*=================================*/
 /*Hero Section Container Styling */
 /*=================================*/
@@ -156,26 +171,30 @@ body {
 /*=================================*/
 .search-box {
     display: flex; /* I decided to use flexbox here to create a flexible and adaptive layout for the search box */
-    justify-content: space-between; /* I spaced out the items evenly to ensure they’re neatly arranged */
+    justify-content: center; /* I spaced out the items evenly to ensure they’re neatly arranged */
+    flex-wrap: wrap;
     align-items: center; /* I aligned everything vertically for a balanced and clean look */
+    gap: 15px;
     background-color: white; /* I chose a white background to keep the design minimal and professional */
     border: 1px solid #ddd; /* I added a subtle border to define and separate the box */
     padding: 20px; /* I added internal padding to make the content visually comfortable */
-    border-radius: 10px; /* I gave the corners a rounded effect to make the design feel modern */
+    border-radius: 15px; /* I gave the corners a rounded effect to make the design feel modern */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* I included a subtle shadow to add depth to the element */
-    width: 90%; /* I kept the width responsive to adjust across different screen sizes */
-    max-width: 1000px; /* I limited the maximum width for consistency on larger screens */
+    width: 100%; /* I kept the width responsive to adjust across different screen sizes */
+    max-width: 90%; /* I limited the maximum width for consistency on larger screens */
     position: relative; /* I positioned the box to overlap slightly above the hero section */
-    bottom: 60px; /* I adjusted its placement to bring it closer to the hero content */
-    left: 22%; /* I aligned the box horizontally for symmetry */
+    /* bottom: 60px; I adjusted its placement to bring it closer to the hero content */
+    /* left: 22%; I aligned the box horizontally for symmetry */
+    margin: 0 auto;
     transform: translateX(-50%); /* I used a transform to perfectly center the element */
     z-index: 10; /* I ensured the search box appears above other overlapping elements */
 }
 
 .search-item {
     flex: 1; /* I made sure all items take equal space for a balanced layout */
+    min-width: 120px; /* Prevent items from shrinking too much */
     text-align: center; /* I centered the text inside each item for uniformity */
-    margin: 0 10px; /* I added spacing between items to prevent them from being too close together */
+    /* margin: 0 10px; I added spacing between items to prevent them from being too close together */
     font-size: 1.5em; /* I adjusted the font size to make the text clear and easy to read */
 }
 
@@ -184,7 +203,7 @@ body {
     color: black; /* I kept the text black for high contrast and readability */
     font-size: 1rem; /* I set the font size to ensure the text is clear */
     font-weight: bold; /* I made the text bold to emphasize the button’s importance */
-    padding: 10px 20px; /* I added padding to make the button easier to click */
+    padding: 10px 30px; /* I added padding to make the button easier to click */
     border: none; /* I removed the border for a cleaner look */
     border-radius: 5px; /* I rounded the corners to give the button a polished design */
     cursor: pointer; /* I set the cursor to pointer to signal that the button is interactive */
@@ -448,4 +467,80 @@ footer {
 footer p {
     margin: 0; /* I removed default margin for consistency */
     line-height: 1.5; /* I adjusted the line height for readability */
+}
+
+/*=================================*/
+/* Mobile View Styles */
+/*=================================*/
+@media (max-width: 768px) {
+    /* Header Navigation */
+    .navbar {
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Arrange links vertically */
+        gap: 10px; /* Reduce the gap between links */
+        margin-top: 20px; /* Add space below the logo */
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem; /* Reduce font size for mobile */
+    }
+
+    /* Hero Section */
+    .hero-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em; /* Scale down the font size */
+    }
+
+    .hero-content p {
+        font-size: 1.5rem; /* Reduce paragraph size */
+    }
+
+    .search-box {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items */
+        gap: 10px; /* Add spacing between items */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .search-item {
+        flex: none; /* Prevent items from stretching */
+        text-align: center; /* Keep text centered */
+        width: 100%; /* Make items full-width */
+        margin: 5px 0; /* Add vertical spacing */
+    }
+
+    .search-button {
+        width: 100%; /* Make the button full-width */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Cards Section (About Us and Houses) */
+    .about-us,
+    .houses-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .card,
+    .house-card {
+        width: 90%; /* Make cards take up most of the screen width */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    .house-image {
+        height: auto; /* Adjust height for proportional scaling */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem; /* Reduce font size */
+        padding: 10px; /* Adjust padding */
+    }
 }
