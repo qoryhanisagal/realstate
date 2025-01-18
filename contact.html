@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descoteaux Properties</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <!-- Logo for the site -->
+            <!-- Logo and Text -->
+            <div class="logo">
+                <img src="img/home-logo.svg" alt="Logo" class="logo-image">
+                <span>Descoteaux Properties</span>
+            </div>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-para">
+            <h2>Contact</h2>
+            <p>Fill the next information</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio mollitia non iusto pariatur aperiam deserunt ullam nesciunt aspernatur, ab accusamus hic illo fuga enim, reprehenderit necessitatibus laboriosam nobis! Aperiam, laudantium.</p>
+        </div>
+
+        <!-- Form Container for better layout control -->
+        <div class="form-container">
+            <form>
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </fieldset>
+                </div>
+
+                <!-- Product Information Section -->
+                <div class="form-section">
+                    <fieldset>
+                        <legend>Property Infornation</legend>
+                        <label for="type">Select Property you would to view:</label>
+                        <select id="type" name="type">
+                            <option value="">--- Descoteaux Penthouses ---</option>
+                            <option value="option2">Laurent Properties</option>
+                            <option value="option3">Sagal Estates</option>
+                        </select>
+
+                        <label for="number">Property Number:</label>
+                        <input type="number" id="number" name="number">
+                    </fieldset>
+                </div>
+
+                <!-- Contact Information Section -->
+                <div class="form-section">
+                    <fieldset>
+                        <legend>Contact Preference</legend>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="contact-method" value="email"> Email
+                            </label>
+                            <label>
+                                <input type="radio" name="contact-method" value="phone"> Phone
+                            </label>
+                        </div>
+                    
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    
+                        <label for="hour">Hour:</label>
+                        <input type="time" id="hour" name="hour">
+                    </fieldset>
+                </div>
+                <!-- Submit Button at the bottom -->
+                <div class="form-section">
+                    <button type="submit" class="send-message-btn">
+                        <span class="icon">&#9993;</span> Send message
+                    </button>
+                </div> <!-- Closing div for form-section -->
+            </form> <!-- Closing form tag -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by Descoteaux Global</p>
+        <p>Copyright © 2024 | Privacy Policy</p>
+    </footer>
+</body>
+</html>

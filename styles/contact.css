@@ -1,0 +1,322 @@
+/* ====================================== */
+/* Global Styles  */
+/* ====================================== */
+
+/* I set the basic font, removed the default margin and padding from the page, 
+   and added a light background color for the whole page */
+   html, body{
+    height: 100%; /* I ensure the body and html take up the full height */
+    margin: 0; /* I remove default margins */
+}
+body {
+    display: flex; /* I use flexbox for the layout */
+    flex-direction: column; /* I align content in a column */
+    font-family: Arial, sans-serif; /* I chose Arial for a clean, readable font */
+    margin: 0; /* I remove default space around the page */
+    padding: 0; /* I remove any extra space inside the page */
+    background-color: #f4f4f4; /* I set a light grayish background */
+    color: #333; /* I use a dark gray text color for readability */
+    height: 100%; /* I make sure the body fills the viewport */
+}
+
+/* ====================================== */
+/* Main Section Styling */
+/* ====================================== */
+/* I style the main content of the page */
+/* I make sure the main content takes up the available space */
+main {
+    flex-grow: 1; /* I allow the main content to grow and fill extra space */
+    padding: 40px 20px; /* I add padding inside the main section */
+    max-width: 1200px; /* I limit the maximum width for better readability */
+    margin: 0 auto; /* I center the main content horizontally */
+    background-color: white; /* I set a white background for contrast */
+    border-radius: 8px; /* I round the corners of the main section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* I add a subtle shadow for depth */
+}
+
+/* I style the second-level heading inside the main section */
+h2 {
+    font-size: 1.8rem; /* I increase the font size for emphasis */
+    color: #333; /* I set the text to dark gray */
+}
+
+/* I style paragraphs inside the main section */
+p {
+    font-size: 1rem; /* I set a standard font size for readability */
+    color: #555; /* I use a slightly lighter gray for the paragraph text */
+    line-height: 1.5; /* I increase line height for better spacing */
+    margin-bottom: 20px; /* I add space below each paragraph */
+}
+
+/*=================================*/
+/* General body styling */
+/*=================================*/
+body {
+    font-family: Arial, sans-serif; /* I chose Arial for its readability */
+    margin: 0; /* I removed any default margin for consistency */
+    padding: 0; /* I cleared any padding for uniformity */
+    background-color: #f4f4f4; /* I set a neutral light gray background */
+    color: #333; /* I use a dark gray text color for contrast */
+}
+
+/*=================================*/
+/* Header Section Styling */
+/*=================================*/
+.header {
+    background-color: black; /* I use black to make the header bold and professional */
+    color: white; /* I set the text color to white for contrast */
+    padding: 20px 40px; /* I add padding for balance and breathing space */
+    margin-bottom: 60px; /* I add space below the header */
+    border-bottom: 7px solid #FFD700; /* I add a gold accent for elegance */
+}
+
+/*=================================*/
+/* Navigation Bar Layout */
+/*=================================*/
+.navbar {
+    display: flex; /* I use flexbox for alignment */
+    justify-content: space-between; /* I space items evenly across the navbar */
+    align-items: center; /* I center everything vertically */
+}
+
+/*=================================*/
+/* Logo Styling */
+/*=================================*/
+.logo {
+    display: flex; /* I use flexbox to align the image and text horizontally */
+    align-items: center; /* I center the content vertically */
+    font-size: 2rem; /* I make the logo text larger for emphasis */
+    font-weight: bold; /* I use bold to make the logo stand out */
+    color: white; /* I set the text color to white for contrast */
+}
+
+.logo-image {
+    width: 40px; /* I set a reasonable size for the logo */
+    height: 40px; /* I match the height to keep proportions consistent */
+    margin-right: 10px; /* I add space between the logo image and text */
+    border-bottom: 7px solid #FFD700; /* I add a gold border for emphasis */
+}
+
+/*=================================*/
+/* Navigation link styling */
+/*=================================*/
+.nav-links {
+    list-style-type: none; /* I remove default bullet points for cleaner navigation */
+    display: flex; /* I use flexbox to arrange links horizontally */
+    gap: 20px; /* I add space between the links for readability */
+    margin: 0; /* I reset the margin */
+    padding: 0; /* I clear any padding */
+}
+
+/*=================================*/
+/* Individual Navigation Link Styling */
+/*=================================*/
+.nav-links li a {
+    text-decoration: none; /* I remove underlines for a modern look */
+    color: white; /* I make the links white for visibility */
+    font-size: 1.5rem; /* I increase the font size for readability */
+    transition: color 0.3s; /* I add a smooth color transition for hover effects */
+}
+/*=================================*/
+/*Navigation Link Hover Effect*/
+/*=================================*/
+.nav-links li a:hover {
+    color: #FFD700; /* I changed the hover color to gold for a vibrant effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* I added a smooth transition for both the color and growth effects */
+}
+
+/* ====================================== */
+/* Form Styling */
+/* ====================================== */
+
+/* I arranged the form as a column with space between elements */
+
+/* Form Container Styling */
+form {
+    display: flex; /* I use flexbox to arrange form elements */
+    flex-direction: column; /* I arrange form elements vertically */
+    gap: 20px; /* I add space between form fields */
+}
+
+/* ====================================== */
+/* Fieldset Styling */
+/* ====================================== */
+
+/* I use fieldsets to wrap sections of the form (personal info, product info, etc.) */
+fieldset {
+    border: 2px solid #ddd; /* I added a light border around each form section */
+    border-radius: 8px; /* I rounded the corners of the fieldset */
+    padding: 20px; /* I added space inside the fieldset */
+    background-color: #fafafa; /* I set a light background color for the form sections */
+    margin-bottom: 20px; /* I added space below each fieldset */
+}
+
+/* ====================================== */
+/* Legend Styling (Section Titles) */
+/* ====================================== */
+
+/* I styled the legend as the title for each form section (e.g., "Personal Information") */
+legend {
+    font-size: 1.2rem; /* I increased the font size of the section title */
+    font-weight: bold; /* I made the title bold */
+    color: #333; /* I set the title color to dark gray */
+    margin-bottom: 10px; /* I added space below the title */
+}
+
+/* ====================================== */
+/* Label Styling */
+/* ====================================== */
+
+/* I styled the labels next to each form field */
+label {
+    font-weight: bold; /* I made the label text bold */
+    font-size: 1rem; /* I set the font size for the labels */
+    color: #333; /* I set the label text color to dark gray */
+    margin-bottom: 5px; /* I added space below the label */
+    display: block; /* I made the label take up the full width of its container */
+}
+
+/* ====================================== */
+/* Input, Select, and Textarea Styles */
+/* ====================================== */
+
+/* I styled all input fields, select dropdowns, and text areas */
+input, select, textarea {
+    width: 100%; /* I made the form fields take up the full width of their container */
+    padding: 10px; /* I added padding inside the fields for better usability */
+    margin-bottom: 15px; /* I added space below each form field */
+    border: 1px solid #ccc; /* I added a light border around the fields */
+    border-radius: 4px; /* I rounded the corners of the fields */
+    font-size: 1rem; /* I set the font size for the text inside the fields */
+    box-sizing: border-box; /* I included padding in the field's width */
+}
+
+/* I specifically styled the textarea (a larger box for messages) */
+textarea {
+    height: 120px; /* I set a fixed height for the textarea */
+    resize: vertical; /* I allowed users to resize the textarea vertically */
+}
+
+/* ====================================== */
+/* Radio Buttons Group */
+/* ====================================== */
+
+/* I created a container for the radio buttons for contact method selection */
+.radio-group {
+    display: flex; /* I aligned the radio buttons and labels in a row */
+    gap: 20px; /* I added space between each radio button group */
+}
+
+/* I styled the radio buttons and labels */
+.radio-group label {
+    display: flex; /* I aligned the radio button and label together */
+    align-items: center; /* I ensured vertical alignment */
+    gap: 20px; /* I added a small gap between the radio button and the text */
+}
+
+/* I removed any extra margins on the radio buttons */
+input[type="radio"] {
+    margin: 0; /* I ensured the radio button is closely aligned with its label */
+}
+
+/* ====================================== */
+/* Button Styling */
+/* ====================================== */
+
+/* This is the styling for the Send message button */
+.send-message-btn {
+    display: inline-flex; /* I aligned the icon and text horizontally */
+    align-items: center; /* I centered the content vertically */
+    justify-content: center; /* I centered the content horizontally */
+    background-color: #FFD700; /* I chose a gold background for the button */
+    color: black; /* I made the text color black for contrast */
+    padding: 12px 30px; /* I added padding inside the button for better spacing */
+    font-size: 1.1rem; /* I increased the font size for better readability */
+    font-weight: bold; /* I made the text bold to emphasize the button */
+    border: none; /* I removed the border for a clean look */
+    border-radius: 25px; /* I rounded the button corners for a softer appearance */
+    cursor: pointer; /* I changed the cursor to a pointer to indicate interactivity */
+    transition: background-color 0.3s ease; /* I added a smooth transition effect on hover */
+    text-decoration: none; /* I removed the underline for a cleaner look */
+    width: 100%; /* I made the button stretch to the full width of its container */
+    margin: 0 auto; /* I centered the button horizontally */
+}
+
+/* I added space between the icon and text */
+.send-message-btn .icon {
+    margin-right: 10px; /* I added space between the icon and text */
+    font-size: 2rem; /* I increased the size of the icon to make it prominent */
+    display: inline-block; /* I made the icon behave like an inline element */
+}
+
+/* I styled the hover effect for the button */
+.send-message-btn:hover {
+    background-color: #FFC107; /* I made the gold background slightly darker on hover */
+}
+
+/* ====================================== */
+/* Footer Styles */
+/* ====================================== */
+
+/* I styled the footer at the bottom of the page */
+footer {
+    text-align: center; /* I centered the footer content */
+    padding: 20px; /* I added padding inside the footer for better spacing */
+    background-color: #000; /* I chose a dark background for the footer */
+    color: white; /* I made the text color white for contrast */
+    margin-top: 40px; /* I added space above the footer */
+    font-size: 1rem; /* I set a default font size to ensure the text isn't too small */
+    border-top: 5px solid #FFD700; /* I added a gold border to match the theme */
+}
+
+/* I added spacing between the paragraphs in the footer */
+footer p {
+    margin: 5px; /* I added space between each paragraph */
+    line-height: 1.5; /* I increased the line height for better readability */
+    color: white; /* I made the paragraph text white */
+    font-size: 1.5em; /* I increased the font size for emphasis */
+}
+
+/* I ensured the visibility and readability of footer links */
+footer p a {
+    color: #fff; /* I made the links white to match the footer text */
+    text-decoration: underline; /* I added an underline to differentiate the links */
+}
+
+/* I styled the hover effect for footer links */
+footer p a:hover {
+    text-decoration: underline; /* I kept the underline on hover for consistency */
+}
+
+/* ====================================== */
+/* Responsive Design for Small Screens */
+/* ====================================== */
+
+/* I adjusted the layout for smaller screens like mobile devices */
+@media (max-width: 768px) {
+    main {
+        padding: 20px; /* I reduced the padding inside the main content */
+    }
+
+    /* I stacked the navigation links vertically on smaller screens */
+    .menu {
+        flex-direction: column; /* I made the menu items stack vertically */
+        gap: 10px; /* I reduced the gap between menu items */
+    }
+
+    /* I adjusted the menu bar to stack vertically and align items to the left */
+    .menu-bar {
+        flex-direction: column; /* I made the menu bar vertical */
+        align-items: flex-start; /* I aligned the items to the left */
+    }
+
+    /* I adjusted form fields for better readability on small screens */
+    input, select, textarea {
+        font-size: 0.9rem; /* I reduced the font size inside form fields */
+    }
+
+    /* I reduced the footer text size for smaller screens */
+    footer p {
+        font-size: 0.9rem; /* I made the footer text smaller for better scaling */
+    }
+}
